@@ -1,0 +1,12 @@
+
+<p>parent component success!!!</p>
+<div>
+    <app-child [username] = 'firstName'></app-child>
+</div>
+<h3>child looping</h3>
+<div *ngFor = 'let u of users'>
+    <app-child [username] = 'u'></app-child>
+
+</div>
+ 
+

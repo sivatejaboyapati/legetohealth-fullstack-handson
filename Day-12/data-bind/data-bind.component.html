@@ -1,0 +1,16 @@
+<div>
+<p>data-bind works!</p>
+<h2>Data Binding Test</h2>
+<h3> Event Binding Test,User Name : {{user}}</h3>
+<input type = 'text' autocomplete="off" #un>
+
+<button (click) = "handleClick(un.value)">Click</button>
+<div [hidden]=" toggleButton"> Hello Message</div>
+<button [disabled]=" toggleButton"> My Button</button>
+<p> Two way data binding success!!!</p>
+<input type ='text' name = 'msg' [(ngModel)] ='message'>
+<div>
+    Message:{{message}};
+</div>
+</div>
+
