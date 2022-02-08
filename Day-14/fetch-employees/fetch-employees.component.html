@@ -1,0 +1,18 @@
+<div>
+        <table class='table table-striped'>
+            <tr>
+                <th>Sl.No</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        <tbody>
+            <tr *ngFor='let emp of employees, let i = index'>
+                <td>{{i+1}}</td>
+                <td>{{emp._id | json}}</td>
+                <td>{{emp.name | json}}</td>
+                <td>{{emp.salary | json}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
